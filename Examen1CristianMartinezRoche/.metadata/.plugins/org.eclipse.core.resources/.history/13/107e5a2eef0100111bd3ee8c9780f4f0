@@ -1,0 +1,63 @@
+package coleccion_videojuegos;
+
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner (System.in);
+		System.out.print("¿Cuántas consolas vas a introducir?: ");
+		int numConsolas = entrada.nextInt();
+		entrada.nextLine();
+		
+		Metodos.leerArrayConsolas (numConsolas, entrada);
+		System.out.print("¿Cuántos videojuegos vas a introducir?: ");
+		int numJuegos = entrada.nextInt();
+		entrada.nextLine();
+		String listaConsolas[] = Metodos.leerArrayJuegos(numJuegos, entrada);
+		String listaJuegos[] = Metodos.leerArrayJuegos(numJuegos, entrada);
+		boolean listaDisponibles[] = Metodos.leerDisponibles(listaConsolas, listaJuegos, entrada);
+		
+		int opcion = 0 ;
+		
+		do {
+			System.out.println("===== MENU =====\r\n"
+					+ "1. Mostrar consolas\r\n"
+					+ "2. Mostrar juegos\r\n"
+					+ "3. Ver disponibilidad\r\n"
+					+ "4. Juego más compatible\r\n"
+					+ "5. Juegos por consola\r\n"
+					+ "6. Salir\r\n"
+					+ "Seleccione una opción:");
+			opcion = entrada.nextInt();
+			entrada.nextLine();
+			
+			switch (opcion) {
+			case 1:
+				Metodos.mostrarConsolas(listaConsolas);
+				break;
+			case 2:
+				
+				break;
+			case 3:
+					
+				break;
+			case 4:
+						
+				break;
+			case 5:
+							
+				break;
+			case 6:
+								
+				break;
+
+			default:
+				break;
+			}
+		} while (opcion != 6);
+	
+		
+	}
+
+}

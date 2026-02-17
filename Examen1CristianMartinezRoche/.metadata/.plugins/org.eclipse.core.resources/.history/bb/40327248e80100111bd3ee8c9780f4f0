@@ -1,0 +1,20 @@
+package coleccion_videojuegos;
+
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner (System.in);
+		System.out.print("¿Cuántas consolas vas a introducir?: ");
+		int numConsolas = entrada.nextInt();
+		entrada.nextLine();
+		Metodos.leerArrayConsolas (numConsolas, entrada);
+		System.out.print("¿Cuántos videojuegos vas a introducir?: ");
+		int numJuegos = entrada.nextInt();
+		entrada.nextLine();
+		Metodos.leerArrayJuegos(numJuegos, entrada);
+
+	}
+
+}

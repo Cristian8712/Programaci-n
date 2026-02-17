@@ -1,0 +1,18 @@
+package pipati;
+
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+	Scanner entrada = new Scanner(System.in);
+	int min = 0;
+	int max = 2;
+	int jug1 = 0;
+	int jug2 = 0;
+	jug1 = Metodos.jugadaValida(entrada);
+	System.out.println("Escoges " + Metodos.muestraJugada(jug1));
+	
+	}
+
+}

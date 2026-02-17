@@ -1,0 +1,29 @@
+package coleccion_videojuegos;
+
+import java.util.Scanner;
+
+public class Metodos {
+
+	public static String[] leerArrayConsolas(int numConsolas, Scanner entrada) {
+		String listaConsolas[] = new String[numConsolas];
+		for (int i = 0; i < numConsolas; i++) {
+			System.out.print("Introduce el nombre de la consola " + (i+1) + " : ");
+			listaConsolas[i] = entrada.nextLine();
+		}
+		return listaConsolas;	
+	}
+	
+	public static String[] leerArrayJuegos(int numJuegos, Scanner entrada) {
+		String listaJuegos[] = new String[numJuegos];
+		for (int i = 0; i < numJuegos; i++) {
+			System.out.print("Juego " + (i+1) + " : ");
+			listaJuegos[i] = entrada.nextLine();
+		}
+		return listaJuegos;	
+	}
+	public static String [][] leerDisponibles (String[] listaConsolas,String[] listaJuegos,Scanner entrada){
+		return null;
+		
+		
+	}
+}
